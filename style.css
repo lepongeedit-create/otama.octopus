@@ -1,0 +1,49 @@
+body {
+  margin: 0;                   /* Removes default page borders */
+  display: flex;               /* Activates Flexbox layout */
+  justify-content: center;     /* Centers the button horizontally (left to right) */
+  align-items: center;         /* Centers the button vertically (top to bottom) */
+  min-height: 100vh;           /* Forces the body to take up 100% of the screen height */
+}
+img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative; /* This makes the body the anchor point */
+}
+
+img {
+  width: 200px; /* Adjust this to make your photo bigger or smaller */
+  height: auto;
+  border: 1px solid black;
+}
+
+button {
+  position: absolute; /* This lifts the button up so it floats over the photo */
+  
+  /* Puts the button right in the middle of the screen/photo */
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 8px 16px;
+  background-color: #6dabc6;
+  border-radius: 6px;
+  border: 1px solid #4b789e;
+}
+
+#containzz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4b789e;
+  font-family:Arial;
+}
